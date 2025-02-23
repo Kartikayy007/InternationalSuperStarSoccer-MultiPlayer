@@ -91,7 +91,6 @@ export default function Game() {
       gameOver: false
     };
 
-    // Initialize players
     const brazilPositions: PlayerPosition[] = [
       { x: canvas.width * -0.2, y: canvas.height * 0.5 },
       { x: canvas.width * -0.1, y: canvas.height * 0.01 },
