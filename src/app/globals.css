@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #1a1a1a;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Game-specific animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-enter {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-exit {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+/* Custom game styles */
+.game-container {
+  @apply relative w-full h-screen flex items-center justify-center;
+  background: linear-gradient(to bottom, #1a472a, #2d5a27);
+}
+
+.game-canvas {
+  @apply border-4 border-white rounded-lg shadow-xl;
+  image-rendering: pixelated;
+}
+
+.game-ui {
+  @apply absolute p-4 bg-black/50 text-white rounded;
+}
+
+.game-controls {
+  @apply text-sm;
+}
+
+.game-controls h2 {
+  @apply font-bold mb-2;
+}
+
+.game-controls ul {
+  @apply space-y-1;
+}
