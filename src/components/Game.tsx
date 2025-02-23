@@ -117,7 +117,7 @@ export default function Game() {
       { x: canvas.width * 0.9, y: canvas.height * 1 }
     ];
 
-    // Load images and initialize game
+    
     loadGameImages().then(images => {
       if (!gameRef.current || !canvas || !ctx) return;
 
