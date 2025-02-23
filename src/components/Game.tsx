@@ -71,7 +71,7 @@ export default function Game() {
       input,
       brazil: [],
       argentina: [],
-      oncontrol: null,
+      oncontrol: null, 
       defensiveRadius: 1000,
       argentinaPossessionTimer: 0,
       argentinaPassInterval: Math.random() * 500 + 1500,
