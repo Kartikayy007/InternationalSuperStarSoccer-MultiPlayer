@@ -66,7 +66,6 @@ export default function Game() {
     const ball = new Ball(canvas.width / 1.18, canvas.height / 2.2);
     ballRef.current = ball;
 
-    // Initialize game object
     gameRef.current= {
       input,
       brazil: [],
