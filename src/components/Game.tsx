@@ -67,7 +67,7 @@ export default function Game() {
     ballRef.current = ball;
 
     // Initialize game object
-    gameRef.current = {
+    gameRef.current= {
       input,
       brazil: [],
       argentina: [],
